@@ -1,0 +1,170 @@
+:root {
+    --color-1: #150E28;
+    --color-2: #903AFF;
+    --color-3: #D434FE;
+    --color-4: #FF26B9;
+    --primary-background: linear-gradient(270deg, #903AFF 0%, #FE34B9 100%);
+}
+
+@font-face {
+    font-family: 'montserrat';
+    src: url('../fonts/Montserrat/Montserrat-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: 'clash-display';
+    src: url('../fonts/Clash-Display/Fonts/Variable/ClashDisplay-Variable.ttf');
+}
+
+@font-face {
+    font-family: 'unica-one';
+    src: url('../fonts/Unica-One/UnicaOne-Regular.ttf');
+}
+
+.font-montserrat {
+    font-family: 'montserrat';
+}
+
+.font-clash-display {
+    font-family: 'clash-display';
+}
+
+.bg-color-primary {
+    background-image: var(--primary-background) !important;
+}
+
+.bg-color-1 {
+    background-color: var(--color-1) !important;
+}
+
+.bg-color-2 {
+    background-color: var(--color-2) !important;
+}
+
+.bg-color-3 {
+    background-color: var(--color-3);
+}
+
+.text-1 {
+    color: var(--color-3);
+}
+
+.text-2 {
+    color: var(--color-4);
+}
+
+.border-color-site {
+    border-color: #FFFFFF2E !important
+}
+
+.border-color-1 {
+    border-color: var(--color-3) !important
+}
+
+body {
+    background-color: var(--color-1);
+    font-family: 'montserrat';
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.navbar-toggler {
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+.btn {
+    border: none !important;
+    padding: .3rem 1.5rem !important;
+    color: rgb(255, 255, 255) !important;
+}
+
+.btn:hover {
+    color: rgb(244, 244, 244) !important;
+}
+
+.heading {
+    margin-bottom: 1.5rem;
+}
+
+li.nav-item:not(:last-of-type) {
+    margin-right: 1rem;
+}
+
+.nav-item:last-child {
+    margin-left: 3rem;
+}
+
+.countdown-timer > div {
+    font-family: 'unica-one';
+    font-size: 44px;
+}
+
+.countdown-timer > div:not(:last-of-type) {
+    margin-right: 2rem;
+}
+
+.countdown-timer span {
+    font-family: 'montserrat';
+    font-size: 16px;
+}
+
+.question:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+.question-heading {
+    display: flex;
+    align-items: center;
+    flex: 0 0 auto;
+    justify-content: space-between;
+    cursor: pointer;
+    padding-bottom: .5rem;
+}
+
+.timeline-wrapper > .row {
+    position: relative;
+}
+
+.timeline-wrapper .timeline-sn {
+    background-color: var(--color-3);
+    border-radius: 50%;
+    border: 2px solid var(--color-1);
+    font-size: 12px;
+    width: 35px;
+    height: 35px;
+    top: 90%;
+    left: 0;
+    transform: translate(-82%, -50%);
+    position: absolute;
+
+}
+
+.timeline::before {
+    content: " ";
+    width: 3px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    /* transform: translateX(-50%); */
+    background-color: var(--color-3);
+    position: absolute;
+}
+
+@media (min-width: 992px) {
+    .timeline-wrapper .timeline-sn {
+        border-width: 5px !important;
+        width: 55px;
+        height: 55px;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%);
+        position: absolute;
+    
+    }
+    .timeline::before {
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
