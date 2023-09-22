@@ -13,7 +13,7 @@
 	<script defer src="./public/assets/plugins/bootstrap/js/bootstrap.bundle.js"></script>
 </head>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-transparent border-color-site border-bottom pt-5 pb-3">
+<nav class="navbar navbar-expand-lg navbar-dark bg-transparent border-color-site border-bottom position-relative pt-5 pb-3">
 	<div class="container">
 		<a class="navbar-brand font-clash-display fw-bold" href="#">get<span class="text-1">linked</span></a>
 		<button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarID" aria-controls="navbarID" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,41 +30,20 @@
 				<li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Overview</a></li>
 				<li class="nav-item"><a class="nav-link active" aria-current="page" href="#">FAQs</a></li>
 				<li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Contact</a></li>
-				<div class="nav-item">
-					<a href="#" class="nav-link btn btn-sm bg-color-primary">Register</a>
-				</div>
+				<li class="nav-item"><a href="#" class="nav-link btn btn-sm bg-color-primary">Register</a></li>
 			</ul>
 		</div>
 	</div>
+	<img class="position-absolute flare img-fluid" alt="" srcset="" src="./public/assets/img/Purple-Lens-Flare-PNG.svg">
 </nav>
 
 <body>
 	<main class="">
-		<section class="border-color-site border-bottom overflow-x-hidden py-5">
+		<section id="initial" class="border-color-site border-bottom overflow-x-hidden pt-2">
 			<div class="container">
 				<div class="row align-items-stretch">
-					<div class="col-lg-6 order-1 pe-lg-0">
-						<div class="d-flex flex-column position-relative h-100 pt-5">
-							<div class="m-auto" style="z-index: 10;">
-								<h1 class="font-clash-display fw-bold" style="font-size: 60px;">getlinked Tech</h1>
-								<h1 class="font-clash-display fw-bold" style="font-size: 60px;">Hackathon <span class="text-1">1.0</span></h1>
-								<p class="pe-5" style="font-weight: 500;">
-									Participate in getlinked tech Hackathon 2023 stand a chance to win a Big prize
-								</p>
-								<div class="d-flex">
-									<a href="#" class="nav-link btn btn-sm bg-color-primary">Register</a>
-								</div>
-								<div class="countdown-timer d-flex align-items-center mt-5">
-									<div>00<span>H</span></div>
-									<div>00<span>M</span></div>
-									<div>00<span>S</span></div>
-								</div>
-							</div>
-							<img class="position-absolute img-fluid" alt="" srcset="" src="./public/assets/img/Purple-Lens-Flare-PNG.svg" style="top: -22%;left: 10%;">
-						</div>
-					</div>
-					<div class="col order-0 order-lg-2 p-lg-0">
-						<div class="d-flex justify-content-center align-items-center flex-wrap fst-italic fw-bold py-3 pb-5" style="font-size: 20px;">
+					<div class="offset-lg-6 col-lg-6">
+						<div class="d-flex justify-content-center align-items-center flex-wrap fst-italic fw-bold pt-3 pb-5 lead-text">
 							Igniting a Revolution in
 							<div class="position-relative flex-wrap ms-2">
 								HR Innovation
@@ -73,14 +52,42 @@
 								</div>
 							</div>
 						</div>
-						<img src="./public/assets/img/man.png" class="img-fluid" alt="" srcset="" style="filter: grayscale(100%);object-fit: cover;">
+					</div>
+					<div class="col-lg-6 order-0 pe-lg-0">
+						<div class="d-flex flex-column text-center text-lg-start h-100 pt-5">
+							<div class="m-auto heading text-center" style="z-index: 10;">
+								<h1 class="position-relative font-clash-display fw-bold">
+									<img src="./public/assets/img/idea.svg" alt="" class="idea img-fluid position-absolute">
+									getlinked Tech
+								</h1>
+								<h1 class="font-clash-display fw-bold">
+									Hackathon <span class="text-1">1.0</span>
+									<img class="img-fluid" src="./public/assets/img/chain.svg" alt="" style="width: 50px;">
+									<img class="img-fluid" src="./public/assets/img/spark.svg" alt="" style="width: 35px">
+								</h1>
+								<p class="pe-lg-5" style="font-weight: 500;">
+									Participate in getlinked tech Hackathon 2023 stand a chance to win a Big prize
+								</p>
+								<div class="d-flex justify-content-center justify-content-lg-start mt-4">
+									<a href="#" class="nav-link btn btn-sm bg-color-primary">Register</a>
+								</div>
+								<div class="countdown-timer d-flex justify-content-center justify-content-lg-start align-items-center mt-3">
+									<div>00<span>H</span></div>
+									<div>00<span>M</span></div>
+									<div>00<span>S</span></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col order-1 order-lg-2 p-lg-0">
+						<img src="./public/assets/img/man.png" class="img-fluid w-100" alt="" srcset="" style="filter: grayscale(100%);object-fit: cover;">
 					</div>
 				</div>
 			</div>
 		</section>
 		
 		<section class="border-color-site border-bottom py-5">
-			<div class="container">
+			<div class="container text-center text-lg-start">
 				<div class="row align-items-stretch">
 					<div class="col-lg-6 order-1 pe-lg-0">
 						<div class="d-flex flex-column position-relative h-100 py-5 px-lg-5">
@@ -111,7 +118,7 @@
 		</section>
 		
 		<section class="border-color-site border-bottom py-5">
-			<div class="container">
+			<div class="container text-center text-lg-start">
 				<div class="row align-items-stretch">
 					<div class="col-lg-6 order-1 pe-lg-0">
 						<div class="d-flex flex-column position-relative h-100">
@@ -142,7 +149,7 @@
 		</section>
 		
 		<section class="border-color-site border-bottom">
-			<div class="container">
+			<div class="container text-center text-lg-start">
 				<div class="row align-items-stretch">
 					<div class="col-lg-6 order-1">
 						<div class="d-flex flex-column position-relative h-100 py-0 px-lg-5">
@@ -194,7 +201,7 @@
 				<div class="row align-items-stretch">
 					<div class="col-lg-5 order-1 pe-lg-0">
 						<div class="d-flex flex-column position-relative h-100 py-5">
-							<div class="m-auto">
+							<div class="m-auto text-center text-lg-start">
 								<div class="heading">
 									<h1 class="font-clash-display fw-bold" style="font-size: 20px;">Frequently Ask</h1>
 									<h1 class="font-clash-display fw-bold text-1" style="font-size: 20px;">Question</h1>
@@ -260,7 +267,7 @@
 		<section id="timeline" class="py-5">
 			<div class="container">
 				<div class="d-flex flex-fill flex-wrap position-relative h-100 py-5">
-					<div class="m-auto">
+					<div class="m-auto text-center text-lg-start">
 						<div class="heading d-flex flex-column align-items-center">
 							<h1 class="font-clash-display fw-bold" style="font-size: 20px;">Timeline</h1>
 							<!-- <h1 class="font-clash-display fw-bold text-1" style="font-size: 20px;">Question</h1> -->
@@ -274,7 +281,7 @@
 				
 				<div class="container-fluid">
 					<div class="row align-items-stretch">
-						<div class="col order-0 order-lg-2 p-0">
+						<div class="col order-0 order-lg-2 px-lg-0 px-3 p-0">
 							<div class="d-flex position-relative h-100 pt-5">
 								<div class="col-lg-11 m-auto">
 									<div class="timeline">
@@ -400,10 +407,10 @@
 			</div>
 		</section>
 		
-		<section id="rewards" class="" style="padding: 6rem 0 3rem 0;">
+		<section id="rewards" class="" style="padding: 6rem 0 4rem 0;">
 			<div class="container">
 				<div class="offset-lg-6 col order-0 order-lg-2">
-					<div class="d-flex flex-column position-relative h-100">
+					<div class="d-flex flex-column text-center text-lg-start position-relative h-100">
 						<div class="heading">
 							<h1 class="font-clash-display fw-bold" style="font-size: 20px;">Prizes and </h1>
 							<h1 class="font-clash-display fw-bold text-1" style="font-size: 20px;">Rewards</h1>
@@ -411,13 +418,13 @@
 						
 						<div class="">
 							<small>
-								Highlight of the prizes or rewards for winners and for participants.
+								Highlight of the prizes or rewards for winners<br>and for participants.
 							</small>
 						</div>
 					</div>
 				</div>
 				
-				<div class="row align-items-center">
+				<div class="row align-items-end">
 					<div class="col-lg-6 order-1">
 						<div class="row">
 							<div class="col-4 px-1">
@@ -452,7 +459,7 @@
 					<div class="col">
 						<div class="d-flex flex-column position-relative h-100" style="padding: 6rem 0 0 0">
 							<div class="m-auto pb-5" style="z-index: 10;">
-								<img src="./public/assets/img/reward.png" class="img-fluid" alt="" srcset="" style="width: 800px;">
+								<img src="./public/assets/img/reward.png" class="prize img-fluid pb-lg-0" alt="" srcset="" style="width: 800px;">
 							</div>
 						</div>
 					</div>
@@ -460,7 +467,7 @@
 			</div>
 		</section>
 		
-		<section id="partners" class="py-5">
+		<section id="partners" class="border-color-site border-bottom py-5">
 			<div class="container">
 				<div class="d-flex flex-fill flex-wrap position-relative h-100 py-5">
 					<div class="m-auto">
@@ -498,8 +505,16 @@
 									<img src="./public/assets/img/companies/whisper.png" class="img-fluid" alt="">
 								</div>
 							</div>
-							<div class="col-4 d-flex bottom" style="border-right: 2px solid #D434FE;"></div>
-							<div class="col-4 d-flex bottom" style=""></div>
+							<div class="col-4 d-flex bottom" style="border-right: 2px solid #D434FE;">
+								<div class="m-auto">
+									<img src="./public/assets/img/companies/paybox.png" class="img-fluid" alt="">
+								</div>
+							</div>
+							<div class="col-4 d-flex bottom" style="">
+								<div class="m-auto">
+									<img src="./public/assets/img/companies/vizual-plus.png" class="img-fluid" alt="">
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>

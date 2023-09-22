@@ -184,6 +184,13 @@ li.nav-item:not(:last-of-type) {
 	transform: translate(-50%, 35%) !important;
 }
 
+.navbar .flare {
+	width: 100%;
+	top: 100%;
+	left: 0;
+	transform: translate(-20%, 0);
+}
+
 #partners .card .top {
 	padding: 0 1rem .5rem;
 }
@@ -201,8 +208,27 @@ li.nav-item:not(:last-of-type) {
 	transform: translate(-50%, -50%);
 }
 
+#initial .heading h1 {
+	font-size: 40px;
+}
+
+#initial .lead-text {
+	font-size: 18px;
+}
+
 #partners .card .bottom {
 	padding: .5rem 1rem 0;
+}
+
+#initial .idea {
+	top: 0;
+	left: 80%;
+	width: 25px;
+	transform: translate(-50%, -60%);
+}
+
+#rewards .prize {
+	padding-bottom: 10rem;
 }
 
 @media (min-width: 992px) {
@@ -222,6 +248,28 @@ li.nav-item:not(:last-of-type) {
 		bottom: 0;
 		left: 50%;
 		transform: translateX(-50%);
+	}
+	
+	.navbar .flare {
+		width: 80%;
+		top: 0;
+		left: 5%;
+		transform: translate(-5%, -25%);
+	}
+	
+	#initial .idea {
+		top: 0;
+		left: 80%;
+		width: 35px;
+		transform: translate(-80%, -55%);
+	}
+	
+	#initial .heading h1 {
+		font-size: 60px;
+	}
+	
+	#initial .lead-text {
+		font-size: 25px;
 	}
 	
 	#partners .card .top:nth-child(1):after, #partners .card .top:nth-child(2):after {
