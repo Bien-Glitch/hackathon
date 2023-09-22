@@ -77,8 +77,13 @@ body {
 	background-color: var(--color-1) !important;
 }
 
-#rewards {
+footer, #rewards {
 	background-color: #150E28F5 !important;
+}
+
+footer {
+	padding-top: 4rem;
+	padding-bottom: 4rem;
 }
 
 .navbar-toggler {
