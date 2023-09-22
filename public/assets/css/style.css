@@ -227,9 +227,9 @@ li.nav-item:not(:last-of-type) {
 
 #initial .idea {
 	top: 0;
-	left: 80%;
+	left: 89%;
 	width: 25px;
-	transform: translate(-50%, -60%);
+	transform: translate(-50%, -68%);
 }
 
 #rewards .prize {
@@ -264,9 +264,9 @@ li.nav-item:not(:last-of-type) {
 	
 	#initial .idea {
 		top: 0;
-		left: 80%;
+		left: 89%;
 		width: 35px;
-		transform: translate(-80%, -55%);
+		transform: translate(-50%, -68%);
 	}
 	
 	#initial .heading h1 {
