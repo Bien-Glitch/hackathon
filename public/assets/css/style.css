@@ -67,7 +67,7 @@
 }
 
 body {
-	/*background-color: var(--color-1);*/
+	background-color: var(--color-1);
 	font-family: 'montserrat';
 	font-size: 16px;
 	color: #FFFFFF;
@@ -234,6 +234,14 @@ li.nav-item:not(:last-of-type) {
 
 #rewards .prize {
 	padding-bottom: 10rem;
+}
+
+.form-control {
+	border-color: grey;
+}
+
+.form-control::placeholder {
+	color: grey !important;
 }
 
 @media (min-width: 992px) {
