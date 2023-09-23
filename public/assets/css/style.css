@@ -105,14 +105,6 @@ footer {
 	margin-bottom: 1.5rem;
 }
 
-li.nav-item:not(:last-of-type) {
-	margin-right: 1rem;
-}
-
-.nav-item:last-child {
-	margin-left: 3rem;
-}
-
 .countdown-timer > div {
 	font-family: 'unica-one';
 	font-size: 44px;
@@ -181,11 +173,11 @@ li.nav-item:not(:last-of-type) {
 }
 
 .bronze-medal, .silver-medal {
-	width: 160px
+	width: 140px
 }
 
 .gold-medal {
-	width: 190px;
+	width: 167px;
 	transform: translate(-50%, 35%) !important;
 }
 
@@ -245,6 +237,14 @@ li.nav-item:not(:last-of-type) {
 }
 
 @media (min-width: 992px) {
+	li.nav-item:not(:last-of-type) {
+		margin-right: 1rem;
+	}
+	
+	.nav-item:last-child {
+		margin-left: 3rem;
+	}
+	
 	.timeline-wrapper .timeline-sn {
 		border-width: 5px !important;
 		width: 55px;
